@@ -11,7 +11,9 @@ EXES = \
 	${EXE_DIR}/simple_printw	\
 	${EXE_DIR}/simple_scanw		\
 	${EXE_DIR}/simple_attr		\
-	${EXE_DIR}/simple_mvchgat
+	${EXE_DIR}/simple_mvchgat	\
+	${EXE_DIR}/simple_winbox	\
+	${EXE_DIR}/simple_winbox2
 
 ${EXE_DIR}/%: %.c
 	${CC} ${CFLAGS} -o $@ $< ${LIBS}
