@@ -1,6 +1,6 @@
 CC=gcc
 CFLAGS=-g -Wall
-LIBS=-lncurses
+LIBS=-lncurses -lpanel
 
 SRC_DIR=.
 EXE_DIR=./exec
@@ -16,7 +16,11 @@ EXES = \
 	${EXE_DIR}/simple_winbox2	\
 	${EXE_DIR}/simple_color		\
 	${EXE_DIR}/simple_menu		\
-	${EXE_DIR}/simple_menu_mouse
+	${EXE_DIR}/simple_menu_mouse\
+	${EXE_DIR}/simple_temp_leave\
+	${EXE_DIR}/simple_ACS		\
+	${EXE_DIR}/simple_panels	\
+	${EXE_DIR}/simple_panels2
 
 ${EXE_DIR}/%: %.c
 	${CC} ${CFLAGS} -o $@ $< ${LIBS}
