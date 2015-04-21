@@ -15,7 +15,8 @@ EXES = \
 	${EXE_DIR}/simple_winbox	\
 	${EXE_DIR}/simple_winbox2	\
 	${EXE_DIR}/simple_color		\
-	${EXE_DIR}/simple_menu
+	${EXE_DIR}/simple_menu		\
+	${EXE_DIR}/simple_menu_mouse
 
 ${EXE_DIR}/%: %.c
 	${CC} ${CFLAGS} -o $@ $< ${LIBS}
