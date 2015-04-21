@@ -14,7 +14,8 @@ EXES = \
 	${EXE_DIR}/simple_mvchgat	\
 	${EXE_DIR}/simple_winbox	\
 	${EXE_DIR}/simple_winbox2	\
-	${EXE_DIR}/simple_color
+	${EXE_DIR}/simple_color		\
+	${EXE_DIR}/simple_menu
 
 ${EXE_DIR}/%: %.c
 	${CC} ${CFLAGS} -o $@ $< ${LIBS}
