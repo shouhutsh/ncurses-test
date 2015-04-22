@@ -20,7 +20,8 @@ EXES = \
 	${EXE_DIR}/simple_temp_leave\
 	${EXE_DIR}/simple_ACS		\
 	${EXE_DIR}/simple_panels	\
-	${EXE_DIR}/simple_panels2
+	${EXE_DIR}/simple_panels2	\
+	${EXE_DIR}/simple_panels3
 
 ${EXE_DIR}/%: %.c
 	${CC} ${CFLAGS} -o $@ $< ${LIBS}
