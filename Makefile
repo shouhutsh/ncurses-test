@@ -1,6 +1,6 @@
 CC=gcc
 CFLAGS=-g -Wall
-LIBS=-lncurses -lpanel
+LIBS=-lncurses -lpanel -lform
 
 SRC_DIR=.
 EXE_DIR=./exec
@@ -21,7 +21,8 @@ EXES = \
 	${EXE_DIR}/simple_ACS		\
 	${EXE_DIR}/simple_panels	\
 	${EXE_DIR}/simple_panels2	\
-	${EXE_DIR}/simple_panels3
+	${EXE_DIR}/simple_panels3	\
+	${EXE_DIR}/simple_form
 
 ${EXE_DIR}/%: %.c
 	${CC} ${CFLAGS} -o $@ $< ${LIBS}
